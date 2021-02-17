@@ -1,0 +1,175 @@
+@import "variabili";
+@import "mixin";
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: $general-size;
+  font-family: 'Roboto', sans-serif;
+}
+#container{
+  // background-color: darkblue;
+  width: 100%;
+  height: 2000px;
+  .nav{
+    width: 100%;
+    height: 120px;
+    background-color: $col-black;
+    color: $col-white;
+    &-top{
+      @include flexCenter;
+      height: 50%;
+      width: 1300px;
+      margin: 0 auto;
+      background-color: $col-black;
+      justify-content: flex-end;
+      i{
+        color: $col-blu;
+      }
+      &-sect{
+        padding-left: 20px;
+        & *{
+          font-size: $extra-small-size;
+        }
+        & > span:nth-child(2){
+          color: #979797;
+        }
+      }
+    }
+    &-bottom{
+      @include flexCenter;
+      height: 50%;
+      width: 1200px;
+      margin: 0 auto;
+      background-color: $col-black;
+      justify-content:space-between;
+      &-sect{
+        font-size: $small-size;
+      }
+    }
+  }
+  .main{
+    width: 100%;
+      .section1{
+      width: 100%;
+      height: 500px;
+      background-image: url($immagine);
+      background-size: cover;
+      .sect1{
+        width: 1350px;
+        height: 100%;
+        margin: 0 auto;
+        background-position: left;
+        display: flex;
+        justify-content: flex-end;
+        &-descrizione{
+          @include flexColumn;
+          width: 500px;
+          height: 100%;
+          padding-top: 70px;
+          margin-right: 50px;
+          &-title{
+            font-size: $extra-big-size;
+          }
+          div:first-of-type{
+            padding-top: 7px;
+            padding-bottom: 20px;
+            font-size: $big-size;
+          }
+          &-title > span:first-child{
+            color: $col-purple;
+            font-size: $extra-big-size;
+          }
+          &-elenco{
+            padding: 7px 0;
+          }
+          &-button{
+            display: flex;
+            justify-content: space-between;
+            width: 230px;
+            height: 60px;
+            border: 1px solid black;
+            // padding: 2px 5px;
+            font-size: $extra-small-size;
+            margin-top: 20px;
+            div:first-child{
+              font-size: $small-size;
+              padding-left: 10px;
+            }
+            div:last-child{
+              @include flexCenter;
+            }
+            div:last-child i{
+              font-size: $big-size;
+              padding-right: 10px;
+            }
+          }
+        }
+        &-scheda{
+          width: 450px;
+          height: calc(100% - 20px);
+          margin-top: 20px;
+          background-color: $col-black-2;
+          display: flex;
+          justify-content: space-between;
+          color: #fff;
+          & > div:first-child{
+            padding-left: 30px;
+            padding-top: 50px;
+          }
+          & > div:last-child{
+            padding-right: 15px;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+    .sect2{
+      @include flexJust;
+      @include flexCenter;
+      width: 100%;
+      height: 80px;
+      background-color: #e6e6e6;
+      & > div{
+        padding: 0 26px;
+      }
+    }
+    .sect3{
+      width: 100%;
+      &-one{
+        @include flexColumn;
+        width: 100%;
+        padding-top: 100px;
+        align-items: center;
+      }
+      &-two{
+        width: 100%;
+        margin-top: 60px;
+        img{
+          width: 100%;
+        }
+      }
+      &-three{
+        @include flexJust;
+        width: 100%;
+        background-image: url($stri);
+        background-repeat: no-repeat;
+        background-position: top;
+        &-tab{
+          @include flexColumn;
+          border: 1px solid black;
+          margin: 50px 70px;
+          align-items: center;
+          img{
+            width: 200px;
+          }
+          &-bottom{
+            @include flexColumn;
+            padding-top: 70px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

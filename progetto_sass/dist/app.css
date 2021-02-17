@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+#container {
+  width: 100%;
+  height: 2000px;
+}
+#container .nav {
+  width: 100%;
+  height: 120px;
+  background-color: #101010;
+  color: #f6f6f6;
+}
+#container .nav-top {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 1300px;
+  margin: 0 auto;
+  background-color: #101010;
+  justify-content: flex-end;
+}
+#container .nav-top i {
+  color: #009cff;
+}
+#container .nav-top-sect {
+  padding-left: 20px;
+}
+#container .nav-top-sect * {
+  font-size: 14px;
+}
+#container .nav-top-sect > span:nth-child(2) {
+  color: #979797;
+}
+#container .nav-bottom {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #101010;
+  justify-content: space-between;
+}
+#container .nav-bottom-sect {
+  font-size: 16px;
+}
+#container .main {
+  width: 100%;
+}
+#container .main .section1 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+}
+#container .main .section1 .sect1 {
+  width: 1350px;
+  height: 100%;
+  margin: 0 auto;
+  background-position: left;
+  display: flex;
+  justify-content: flex-end;
+}
+#container .main .section1 .sect1-descrizione {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100%;
+  padding-top: 70px;
+  margin-right: 50px;
+}
+#container .main .section1 .sect1-descrizione-title {
+  font-size: 25px;
+}
+#container .main .section1 .sect1-descrizione div:first-of-type {
+  padding-top: 7px;
+  padding-bottom: 20px;
+  font-size: 21px;
+}
+#container .main .section1 .sect1-descrizione-title > span:first-child {
+  color: #ba57cb;
+  font-size: 25px;
+}
+#container .main .section1 .sect1-descrizione-elenco {
+  padding: 7px 0;
+}
+#container .main .section1 .sect1-descrizione-button {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  height: 60px;
+  border: 1px solid black;
+  font-size: 14px;
+  margin-top: 20px;
+}
+#container .main .section1 .sect1-descrizione-button div:first-child {
+  font-size: 16px;
+  padding-left: 10px;
+}
+#container .main .section1 .sect1-descrizione-button div:last-child {
+  display: flex;
+  align-items: center;
+}
+#container .main .section1 .sect1-descrizione-button div:last-child i {
+  font-size: 21px;
+  padding-right: 10px;
+}
+#container .main .section1 .sect1-scheda {
+  width: 450px;
+  height: calc(100% - 20px);
+  margin-top: 20px;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+#container .main .section1 .sect1-scheda > div:first-child {
+  padding-left: 30px;
+  padding-top: 50px;
+}
+#container .main .section1 .sect1-scheda > div:last-child {
+  padding-right: 15px;
+  padding-top: 20px;
+}
+#container .main .sect2 {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #e6e6e6;
+}
+#container .main .sect2 > div {
+  padding: 0 26px;
+}
+#container .main .sect3 {
+  width: 100%;
+}
+#container .main .sect3-one {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 100px;
+  align-items: center;
+}
+#container .main .sect3-two {
+  width: 100%;
+  margin-top: 60px;
+}
+#container .main .sect3-two img {
+  width: 100%;
+}
+#container .main .sect3-three {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../images/stri.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#container .main .sect3-three-tab {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 50px 70px;
+  align-items: center;
+}
+#container .main .sect3-three-tab img {
+  width: 200px;
+}
+#container .main .sect3-three-tab-bottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  text-align: center;
+}
